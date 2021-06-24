@@ -1,4 +1,4 @@
-function getCovidapi() {
+async function getCovidapi() {
   const jsondata = await fetch("https://api.covid19api.com/summary");
   const jsdata = await jsondata.json();
   console.log(jsdata);
